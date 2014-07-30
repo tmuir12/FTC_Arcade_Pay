@@ -2,10 +2,11 @@ import requests
     #returns balance of feathercoin address
    
     
-def toFTC( v='6oQqqYYPvnPRukPp2qiEWVzMkHnqCx2VKn',j='0'): #insert your feathercoin address here
-    payload = {'output': 'balance','address': v,'json': j}
+def toFTC( a,j='0'):
+    payload = {'output': 'balance','address': a,'json': j}
     to_ftc_url = 'http://api.feathercoin.com/'
-    ftotal=-1 
+    ftotal=-1 # sets ftotal to -1 so it will return -1 an impossible balance
+    #if API is offline
     try:
         r = requests.get(to_ftc_url, params=payload)
 
