@@ -35,6 +35,8 @@ Every 15 seconds it polls the API to see if a credit has been purchased, if it c
 More than 1 credit can be purchased at a time, it simply counts off the credit to the relay.
 Timing of how long the relay is to be activated will depend on the device you are connecting this to.
 
-You will need to create an PNG file called CSN.png to be displayed when your Raspberry Pi can't talk to the API, no larger than 320x240
+You will need to create an PNG file called CSN.png to be displayed when your Raspberry Pi can't talk to the API, no larger than 320x240.
+Also download the Feathercoin logo from here https://www.feathercoin.com/wp-content/uploads/2014/06/FTC-logo-big-grey-white-bg.png and resize it to 90 x 90 and resave as FTC-logo.png 
+This is the logo it adds in when creating the QR code PNG file
 
 If you like it feel free to send a donation to 6ihSh7xDnnwLJqKVAKZetTqzttxbSrnaLJ  FTC
